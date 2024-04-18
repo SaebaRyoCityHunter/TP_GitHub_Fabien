@@ -1,1 +1,1 @@
-# Simulation de test pour le fichier Password_Generator.py lors d'un push sur GihHub
+# Simulation de test pour le fichier Password_Generator.py lors d'un push sur GitHub
