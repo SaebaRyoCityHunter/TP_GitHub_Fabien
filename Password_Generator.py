@@ -38,19 +38,13 @@ def replaceWithUppercaseLetter(pword):
 
 def main():
     
-    numPasswords = int(input("How many passwords do you want to generate? "))
+    numPasswords = 2 # Remplacement du input pas 2 valeurs à tester #
     
     print("Generating " +str(numPasswords)+" passwords")
     
-    passwordLengths = []
+    passwordLengths = [8, 16] # Défini la longeur les valeurs du mdp à tester #
 
     print("Minimum length of password should be 3")
-
-    for i in range(numPasswords):
-        length = int(input("Enter the length of Password #" + str(i+1) + " "))
-        if length<3:
-            length = 3
-        passwordLengths.append(length)
     
     
     Password = generatePassword(passwordLengths)
@@ -59,5 +53,5 @@ def main():
         print ("Password #"+str(i+1)+" = " + Password[i])
 
 
-
-main()
+if __name__ == "__main__":
+    main()
